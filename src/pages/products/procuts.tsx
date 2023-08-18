@@ -131,7 +131,7 @@ export const Products = () => {
       formData.append("name", data.name);
       formData.append("price", FormataMoeda(data.price));
       formData.append("category", data.category);
-      formData.append("image", data.image[0]);
+      formData.append("image", data.image.name);
       formData.append("description", data.description);
       formData.append("shipment", data.shipment);
       // https://apipf.jogajuntoinstituto.org
