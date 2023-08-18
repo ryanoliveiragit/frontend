@@ -59,7 +59,7 @@ export const RegisterForm = () => {
   console.log(errors);
   const handleForm = (data: RegisterFormInputs) => {
     // https://apipf.jogajuntoinstituto.org
-    Axios.post("apijojunto.vercel.app/register", {
+    Axios.post("https://apijogajunto.vercel.app/register", {
       email: data.email,
       password: data.password,
     }).then((response) => {
