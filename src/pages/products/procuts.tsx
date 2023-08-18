@@ -131,7 +131,7 @@ export const Products = () => {
       formData.append("name", data.name);
       formData.append("price", FormataMoeda(data.price));
       formData.append("category", data.category);
-      formData.append("image", `https://backend-kohl-zeta.vercel.app/${data.image}`);
+      formData.append("image", data.image);
       formData.append("description", data.description);
       formData.append("shipment", data.shipment);
       // https://apipf.jogajuntoinstituto.org
@@ -456,7 +456,7 @@ export const Products = () => {
                 {filterSearch.map((item) => (
                   <div key={item.id}>
                     <Cards>
-                      <img src={item.image} alt={item.description} />
+                      <img src={`https://backend-kohl-zeta.vercel.app/${item.image}`} alt={item.description} />
                     </Cards>
                     <DetailsCard>
                       <div>
