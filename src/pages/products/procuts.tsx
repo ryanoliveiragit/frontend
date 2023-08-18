@@ -136,7 +136,7 @@ export const Products = () => {
       formData.append("shipment", data.shipment);
       // https://apipf.jogajuntoinstituto.org
       axios
-        .post("https://backend-kohl-zeta.vercel.app/", formData, {
+        .post("https://apipf.jogajuntoinstituto.org/", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization: jwt,
@@ -456,7 +456,7 @@ export const Products = () => {
                 {filterSearch.map((item) => (
                   <div key={item.id}>
                     <Cards>
-                      <img src={`https://backend-kohl-zeta.vercel.app/${item.image}`} alt={item.description} />
+                      <img src={`https://apipf.jogajuntoinstituto.org/${item.image}`} alt={item.description} />
                     </Cards>
                     <DetailsCard>
                       <div>

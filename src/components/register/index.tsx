@@ -59,7 +59,7 @@ export const RegisterForm = () => {
   console.log(errors);
   const handleForm = (data: RegisterFormInputs) => {
     // https://apipf.jogajuntoinstituto.org
-    Axios.post("https://backend-kohl-zeta.vercel.app/register", {
+    Axios.post("https://apipf.jogajuntoinstituto.org/register", {
       email: data.email,
       password: data.password,
     }).then((response) => {
