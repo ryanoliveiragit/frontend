@@ -136,7 +136,7 @@ export const Products = () => {
       formData.append("shipment", data.shipment);
       // https://apipf.jogajuntoinstituto.org
       axios
-        .post("https://appi-xi.vercel.app/", formData, {
+        .post("https://backend-ten-olive.vercel.app/", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization: jwt,
