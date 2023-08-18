@@ -7,7 +7,7 @@ export const getProducts = async (
 ) => {
   try {
     const jwt = localStorage.getItem('jwt')
-    const res = await axios.get<ProductsType[]>("https://apijojunto.vercel.app/", { headers: {'Authorization': jwt}});
+    const res = await axios.get<ProductsType[]>("https://apijogajunto.vercel.app/", { headers: {'Authorization': jwt}});
     setProducts(res.data);
   } catch (error) {
     console.log(error);
