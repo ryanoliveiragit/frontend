@@ -103,7 +103,7 @@ export const Login = () => {
         <label>Faça login</label>
         <TextField
           type="text"
-          placeholder="Digite seu e-mail"
+          placeholder="Digite seu e-mail!"
           {...register("email")}
           error={!!errors.email?.message}
           helperText={errors.email?.message}
