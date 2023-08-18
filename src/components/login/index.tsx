@@ -64,7 +64,7 @@ export const Login = () => {
   });
 
   const handleForm = (data: LoginFormInputs) => {
-    Axios.post("https://backend-ten-olive.vercel.app/login", {
+    Axios.post("https://apipf.jogajuntoinstituto.org/login", {
       email: data.email,
       password: data.password,
     })
