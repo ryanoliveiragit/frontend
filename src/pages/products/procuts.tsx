@@ -131,12 +131,12 @@ export const Products = () => {
       formData.append("name", data.name);
       formData.append("price", FormataMoeda(data.price));
       formData.append("category", data.category);
-      formData.append("image", `https://backend-gilt-one.vercel.app/${data.image}`);
+      formData.append("image", `https://backend-kohl-zeta.vercel.app/${data.image}`);
       formData.append("description", data.description);
       formData.append("shipment", data.shipment);
       // https://apipf.jogajuntoinstituto.org
       axios
-        .post("https://backend-gilt-one.vercel.app/", formData, {
+        .post("https://backend-kohl-zeta.vercel.app/", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization: jwt,

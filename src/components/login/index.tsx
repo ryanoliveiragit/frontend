@@ -64,7 +64,7 @@ export const Login = () => {
   });
 
   const handleForm = (data: LoginFormInputs) => {
-    Axios.post("https://backend-gilt-one.vercel.app/login", {
+    Axios.post("https://backend-kohl-zeta.vercel.app/login", {
       email: data.email,
       password: data.password,
     })
