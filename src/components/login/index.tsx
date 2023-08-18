@@ -64,7 +64,7 @@ export const Login = () => {
   });
 
   const handleForm = (data: LoginFormInputs) => {
-    Axios.post("https://apijojunto.vercel.app/login", {
+    Axios.post("https://appi-xi.vercel.app/login", {
       email: data.email,
       password: data.password,
     })
